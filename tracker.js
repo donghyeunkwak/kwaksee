@@ -15,7 +15,7 @@
     console.log("📌 ScamTrap 방문 기록:", log);
 
     // 너가 준 Google Sheet Webhook URL
-    await fetch("https://script.google.com/macros/s/AKfycbxzMGH1nodRXkPhWCEZyEQk8mr-U5S1NaEJNOXSSXIocADVSkwLkxmwa3dJO0UedFARdg/exec", {
+    await fetch(https://script.google.com/macros/s/AKfycbzfg_32IvSAhaEXheYiLwTI6HrU1fzAHXCC3z-AzkyPInRZ8hXnHIrO-gMqFFs_PzlC_w/exec, {
       method: "POST",
       body: JSON.stringify(log),
       headers: {
