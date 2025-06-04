@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>곽's 지식창고</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background: linear-gradient(120deg, #1a1a1a, #2a2a2a);
+      color: #fff;
+      min-height: 100vh;
+      padding: 0 20px 60px;
+      background-attachment: fixed;
+      overflow-x: hidden;
+    }
+
+    .topbar {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 60px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .topbar .left {
+      position: absolute;
+      left: 0;
+      padding-left: 20px;
+      font-size: 1.2rem;
+      color: #bbb;
+      cursor: pointer;
+    }
+
+    .topbar .center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .topbar .right {
+      position: absolute;
+      right: 0;
+      padding-right: 20px;
+      font-size: 1rem;
+      color: #aaa;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .card {
+      display: flex;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(16px) saturate(1.6);
+      -webkit-backdrop-filter: blur(16px) saturate(1.6);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 200px;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .card-thumb {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .card-text {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-meta {
+      font-size: 0.85rem;
+      color: #ccc;
+      margin-bottom: 8px;
+    }
+
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .card-summary {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .card-tagline {
+      font-style: italic;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        flex-direction: column;
+        height: auto;
+      }
+      .card-thumb {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="left" onclick="window.location.href='index.html'">←</div>
+    <div class="center">곽's 지식창고</div>
+    <div class="right">kwakpedia</div>
+  </div>
+
+  <div class="grid">
+    <div class="card" onclick="location.href='blackhole.html'">
+      <img class="card-thumb" src="img/blackhole.jpg" alt="블랙홀 이미지">
+      <div class="card-text">
+        <div class="card-meta">📅 2025.06.05 | 🔍 블랙홀 / 중력 / 빛</div>
+        <div class="card-title">블랙홀은 왜 까맣지?</div>
+        <div class="card-summary">
+          중력이 너무 강해서 빛조차 빠져나오지 못하는 공간.<br>
+          그래서 우리 눈엔 ‘검은 공백’처럼 보이는 것이다.
+        </div>
+        <div class="card-tagline">“보이지 않는다고 없는 건 아니다”</div>
+      </div>
+    </div>
+
+    <div class="card" onclick="location.href='lotto.html'">
+      <img class="card-thumb" src="img/lotto.jpg" alt="로또 이미지">
+      <div class="card-text">
+        <div class="card-meta">📅 2025.06.04 | 🔍 로또 / 통계 / 확률</div>
+        <div class="card-title">로또는 진짜 무작위일까?</div>
+        <div class="card-summary">
+          무작위라면서도 유난히 자주 나오는 번호들? <br>
+          데이터는 거짓말을 하지 않는다. 분석해보자.
+        </div>
+        <div class="card-tagline">“확률 속에 숨은 패턴을 찾아라”</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

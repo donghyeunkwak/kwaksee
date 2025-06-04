@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>곽의 감성캠핑로그</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Special+Elite&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Nanum Pen Script', cursive;
+      background-color: #fdfcf7;
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      color: #333;
+      min-height: 100vh;
+      padding: 0 16px 60px;
+    }
+
+    .topbar {
+      position: relative;
+      text-align: center;
+      padding: 20px 0;
+      font-family: 'Special Elite', cursive;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      border-bottom: 1px dashed #aaa;
+      margin-bottom: 20px;
+    }
+
+    .back-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #444;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #fff;
+      border: 2px solid #eee;
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .thumbnail {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 6px solid #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 14px;
+    }
+
+    .title {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+      font-family: 'Special Elite', cursive;
+    }
+
+    .summary {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      font-family: 'Special Elite', cursive;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="back-icon" onclick="history.back()">←</div>
+    곽의 감성캠핑로그
+  </div>
+
+  <div class="grid">
+    <div class="card" onclick="location.href='camp1.html'">
+      <img class="thumbnail" src="img/campfire.jpg" alt="불멍">
+      <div class="title">불멍의 철학</div>
+      <div class="summary">타닥타닥… 불꽃을 바라보다 보면, 마음의 먼지도 함께 타는 듯한 밤이 있다.</div>
+    </div>
+
+    <div class="card" onclick="location.href='camp2.html'">
+      <img class="thumbnail" src="img/morningtent.jpg" alt="아침텐트">
+      <div class="title">이른 아침, 텐트 밖 세상</div>
+      <div class="summary">새소리에 잠이 깨는 아침, 텐트 문을 열자마자 마주하는 안개 낀 숲. 그게 진짜 하루의 시작이다.</div>
+    </div>
+  </div>
+
+  <footer>
+    ⛺ 곽의 캠핑은 계속됩니다... 감성 충전 완료
+  </footer>
+</body>
+</html>
