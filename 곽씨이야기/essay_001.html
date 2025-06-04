@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>그날의 하늘은, 내 마음 같았다</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: linear-gradient(to bottom, #d0ebff, #f0f9ff);
+      font-family: 'Nanum Pen Script', cursive;
+      color: #333;
+    }
+    .topbar {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 14px 20px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .topbar .title {
+      flex: 1;
+      text-align: center;
+      font-size: 1.3rem;
+    }
+    .topbar a {
+      text-decoration: none;
+      background-color: #ffffff;
+      color: #000000;
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+    .paper {
+      max-width: 720px;
+      margin: 30px auto 80px;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 50px 30px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+    .title {
+      text-align: center;
+      font-size: 2.6rem;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #1e1e1e;
+    }
+    .meta {
+      text-align: center;
+      font-size: 1rem;
+      color: #777;
+      margin-bottom: 10px;
+    }
+    .music-inline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+      color: #444;
+    }
+    .divider {
+      border-top: 1px dashed #ccc;
+      margin: 30px auto;
+      width: 60%;
+    }
+    .thumbnail {
+      display: block;
+      margin: 0 auto 30px;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .content {
+      font-size: 1.45rem;
+      line-height: 2.2;
+      white-space: pre-line;
+      color: #444;
+      padding: 0 5px;
+    }
+    .other-essays {
+      margin-top: 60px;
+    }
+    .other-essays h3 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+    .essay-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .essay-card {
+      display: flex;
+      background-color: #f9fcff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .essay-card:hover {
+      transform: scale(1.02);
+    }
+    .essay-card img {
+      width: 130px;
+      height: 100px;
+      object-fit: cover;
+    }
+    .essay-info {
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .essay-info h4 {
+      font-size: 1.2rem;
+      margin-bottom: 4px;
+      color: #000000;
+    }
+    .essay-info p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+    @media screen and (max-width: 600px) {
+      .title { font-size: 2rem; }
+      .content { font-size: 1.25rem; }
+      .essay-card {
+        flex-direction: column;
+      }
+      .essay-card img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <a href="sou.html">←</a>
+    <div class="title">끄적끄적</div>
+    <div style="width: 80px;"></div>
+  </div>
+
+  <div class="paper">
+    <div class="title" data-aos="fade-up">그날의 하늘은, 내 마음 같았다</div>
+    <div class="meta" data-aos="fade-up" data-aos-delay="100">2025년 6월 4일 · 감성기록</div>
+
+    <div class="music-inline" data-aos="fade-up" data-aos-delay="200">
+      <div>🎵 아이유 - 밤편지</div>
+      <audio controls>
+        <source src="music/song1.mp3" type="audio/mpeg">
+        브라우저가 오디오를 지원하지 않습니다.
+      </audio>
+    </div>
+
+    <div class="divider" data-aos="fade-up" data-aos-delay="300"></div>
+
+    <img src="https://via.placeholder.com/800x400?text=하늘+썸네일" alt="썸네일" class="thumbnail" data-aos="fade-up" data-aos-delay="400">
+
+    <div class="content" data-aos="fade-up" data-aos-delay="500">
+그날은 그냥 그런 날이었다.
+아무 일도 일어나지 않았는데,
+괜히 혼자 울컥했던 하루.
+
+바람이 지나가는 자리에
+내 생각도 같이 흘러갔다.
+
+누구에게도 말하지 못했던 말들.
+오늘은 그걸 글로 남긴다.
+    </div>
+
+    <div class="other-essays" data-aos="fade-up" data-aos-delay="600">
+      <div class="essay-list">
+        <a href="essay_002.html" class="essay-card" data-aos="fade-up" data-aos-delay="700">
+          <img src="https://via.placeholder.com/150x100?text=벚꽃" alt="벚꽃 썸네일">
+          <div class="essay-info">
+            <h4>오늘, 벚꽃이 졌다</h4>
+            <p>한 장의 벚꽃잎이 내 어깨에 떨어졌다. 괜히 울컥했던 그날…</p>
+          </div>
+        </a>
+        <a href="essay_003.html" class="essay-card" data-aos="fade-up" data-aos-delay="800">
+          <img src="https://via.placeholder.com/150x100?text=편지" alt="편지 썸네일">
+          <div class="essay-info">
+            <h4>편지지에 쓴 너의 이름</h4>
+            <p>쓰고 지우고 또 쓰고, 그때는 왜 그렇게 너를 적고 싶었을까.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">© 2025 곽씨 이야기</div>
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+</body>
+</html>

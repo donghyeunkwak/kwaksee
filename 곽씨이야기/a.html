@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>오늘 뭐 볼까?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Black Han Sans', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      background-image: radial-gradient(#1a1a2e 1px, transparent 1px);
+      background-size: 4px 4px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #111;
+      padding: 16px 20px;
+      font-size: 1.6rem;
+      color: #ff4e50;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(255, 78, 80, 0.2);
+      z-index: 1000;
+    }
+
+    header a {
+      text-decoration: none;
+      color: #ff4e50;
+    }
+
+    header span {
+      color: #fff;
+      font-size: 1.2rem;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: #1e1e2f;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(255, 78, 80, 0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .thumbnail {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .title {
+      font-size: 1.3rem;
+      margin-bottom: 6px;
+      color: #ffe066;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .comment {
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ff4e50;
+      color: #fff;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #e6363a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header { font-size: 1.3rem; padding: 14px 16px; }
+      .card-content { padding: 12px; }
+      .title { font-size: 1.2rem; }
+      .btn { padding: 6px 12px; font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">← 오늘 뭐 볼까?</a>
+    <span>곽씨이야기</span>
+  </header>
+
+  <div class="container">
+
+    <div href="ab.html" class="card">
+      <img src="https://i.ytimg.com/vi/tKwhs5u9z8c/maxresdefault.jpg" alt="너의 이름은" class="thumbnail">
+      <div class="card-content">
+        <div class="title">너의 이름은</div>
+        <div class="subtitle">애니메이션 | 넷플릭스</div>
+        <div class="comment">감성 폭발. 새벽 감상 추천 🎧</div>
+        <a href="ab.html" class="btn">자세히 보기</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/ko/e/e1/%EB%82%A0_%EC%9C%84%ED%95%9C_%EC%9A%B0%EB%A6%AC%EC%9D%98_%EA%B3%B5%EC%96%91_poster.jpg" alt="날 위한 우리의 공양" class="thumbnail">
+      <div class="card-content">
+        <div class="title">날 위한 우리의 공양</div>
+        <div class="subtitle">드라마 | 왓챠</div>
+        <div class="comment">먹먹한 현실감. 혼자 보기 추천 🥲</div>
+        <a href="#" class="btn">자세히 보기</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>© 2025 곽씨 이야기 | 오늘의 추천, 내일도 있어요 🍿</footer>
+
+</body>
+</html>

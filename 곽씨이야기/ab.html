@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>너의 이름은 - 영화 감상</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+      font-family: 'Noto Sans KR', sans-serif;
+      line-height: 1.7;
+      padding-bottom: 60px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      background-color: #111;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.2rem;
+      color: #ff4e50;
+      z-index: 1000;
+    }
+
+    .topbar a {
+      text-decoration: none;
+      color: #ff4e50;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 24px 20px;
+    }
+
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #ffe066;
+    }
+
+    .date {
+      font-size: 0.95rem;
+      color: #aaa;
+      margin-bottom: 24px;
+    }
+
+    .thumbnail {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 24px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .content {
+      font-size: 1.1rem;
+      white-space: pre-line;
+      margin-bottom: 40px;
+    }
+
+    .recommend-title {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      color: #ffb347;
+    }
+
+    .horizontal-card {
+      display: flex;
+      background-color: #2b2b2b;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+    }
+
+    .horizontal-card img {
+      width: 40%;
+      min-width: 120px;
+      object-fit: cover;
+    }
+
+    .horizontal-card .card-text {
+      padding: 12px;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      width: 60%;
+    }
+
+    .back-button {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back-button a {
+      display: inline-block;
+      background-color: #ff4e50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .title { font-size: 1.6rem; }
+      .content { font-size: 1rem; }
+
+      .horizontal-card img {
+        width: 40%;
+      }
+
+      .horizontal-card .card-text {
+        width: 60%;
+        font-size: 0.9rem;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <a href="a.html">오늘 뭐 볼까?</a>
+  </div>
+
+  <div class="container">
+    <div class="title">너의 이름은</div>
+    <div class="date">2025. 6. 5</div>
+
+    <img src="https://i.ytimg.com/vi/tKwhs5u9z8c/maxresdefault.jpg" alt="너의 이름은 포스터" class="thumbnail">
+
+    <div class="content">
+‘너의 이름은’은 신카이 마코토 감독의 대표작으로, 
+도쿄의 남학생과 시골의 여학생이 서로 몸이 바뀌는 신비한 경험을 하며
+서로를 기억해 가는 이야기다.
+
+이 작품은 단순한 로맨스를 넘어서 ‘시간’과 ‘기억’, ‘운명’이라는 테마를 감성적으로 풀어낸다. 
+극 중 삽입된 음악과 영상미는 일본 애니메이션 사상 손꼽힐 정도로 강렬하다.
+
+특히 마지막 장면에서 두 주인공이 서로를 향해 “너의 이름은...”이라고 외치는 순간, 
+모든 관객의 감정을 정점으로 끌어올린다.
+
+넷플릭스에서 다시 볼 수 있으니, 감성 충전이 필요할 때 추천한다.
+    </div>
+
+    <div class="recommend-title">📽️ 오늘 뭐 볼까? 콘텐츠</div>
+
+    <div class="horizontal-card">
+      <img src="https://upload.wikimedia.org/wikipedia/ko/e/e1/%EB%82%A0_%EC%9C%84%ED%95%9C_%EC%9A%B0%EB%A6%AC%EC%9D%98_%EA%B3%B5%EC%96%91_poster.jpg" alt="날 위한 우리의 공양">
+      <div class="card-text">
+        날 위한 우리의 공양 – 먹먹한 현실감, 혼자 보기 좋은 드라마
+      </div>
+    </div>
+
+    <div class="horizontal-card">
+      <img src="https://i.namu.wiki/i/zpbLhW1XLoWBmVtu8h65lAJlltnZbAV4H0V3xQ8umZREJXWBnIGJ7ml3g2eVLc2De44o-TsRMHnU16sqq7tcnA.webp" alt="초속 5cm">
+      <div class="card-text">
+        초속 5cm – 흐릿한 기억과 지나간 감정의 속도
+      </div>
+    </div>
+
+    <div class="back-button">
+      <a href="a.html">← 콘텐츠 리스트로 돌아가기</a>
+    </div>
+  </div>
+
+  <footer>© 2025 곽씨 이야기</footer>
+
+</body>
+</html>
